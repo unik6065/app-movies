@@ -1,0 +1,45 @@
+.topBar {
+  background-color: #0E0F0E;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.topBarSearchBar {
+  border: #262726 1px solid;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 15px;
+  width: 300px;
+  height: 35px;
+  color: #757575;
+  font-weight: 600;
+
+  span {
+    margin-right: 15px;
+    margin-left: 25px;
+  }
+
+  .topBarInputField {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    font-weight: inherit;
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.topBarSliders {
+  cursor: pointer;
+}
+
+.accountInfos {
+  display: flex;
+  gap: 15px;
+}

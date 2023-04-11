@@ -1,0 +1,30 @@
+.leftbar {
+  color: #474449;
+  font-size: 15px;
+  border-right: #474449 1px solid;
+  height: 100%;
+
+  .active {
+    color: white;
+    max-width: 90%;
+    border-radius: 25px;
+    background-color: rgba($color: #fff, $alpha: .1);
+  }
+}
+
+.leftbarLogo {
+  color: white;
+  font-size: 18px;
+  margin-top: 49px;
+  margin-bottom: 125px;
+}
+
+.leftbarFeedOption {
+  font-size: 25px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 5px;
+  cursor: pointer;
+}

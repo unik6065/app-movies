@@ -1,0 +1,15 @@
+.homeContainer {
+  margin: 25px auto;
+  width: 100%;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+}
+
+.topBar {
+  grid-column: 4/12;
+}
+
+.leftBat {
+  grid: 1/4;
+}
