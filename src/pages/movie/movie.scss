@@ -1,0 +1,23 @@
+.movie {
+  border: 1px red solid;
+}
+
+.movieContainer {
+  border-radius: 15px;
+}
+
+.movieHeader {
+  height: 700px;
+
+  .movieBackdrop {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    opacity: .3;
+  }
+
+  .moviePoster {
+    height: 150px;
+    border: 1px red solid;
+  }
+}

@@ -4,12 +4,26 @@
   max-width: 1500px;
   display: grid;
   grid-template-columns: repeat(12, auto);
+
+  .subheading {
+    color: #ffffff;
+    font-size: 30px;
+  }
 }
 
-.topBar {
-  grid-column: 4/12;
+.mainPage {
+  grid-column: 5/12;
+  max-width: 100%;
 }
 
-.leftBat {
-  grid: 1/4;
+.homeMovieList {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 25px;
+  max-width: 1200px;
+}
+
+.sideBar {
+  grid-column: 1/4;
+  margin-right: 25px;
 }
