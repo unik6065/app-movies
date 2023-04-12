@@ -1,23 +1,85 @@
-.movie {
-  border: 1px red solid;
-}
-
 .movieContainer {
-  border-radius: 15px;
+  padding: 75px;
+
+  .subheading {
+    color: white
+  }
 }
 
 .movieHeader {
   height: 700px;
+  position: relative;
 
   .movieBackdrop {
     height: inherit;
     width: 100%;
     object-fit: cover;
     opacity: .3;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
   }
 
   .moviePoster {
-    height: 150px;
-    border: 1px red solid;
+    height: 300px;
+    border-radius: 15px;
+  }
+}
+
+.movieHeaderDetails {
+  margin-left: 50px;
+}
+
+.movieHeaderTitle {
+  display: flex;
+  align-items: first baseline;
+  gap: 15px;
+
+  .movieTitle {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+}
+
+.movieHeaderInfos {
+  color: white;
+  display: flex;
+  position: absolute;
+  top: 175px;
+  left: 150px;
+}
+
+.movieHeaderCategories {
+  margin-top: 5px;
+  margin-bottom: 50px;
+
+  .categories {
+    color: #ffffff;
+  }
+}
+
+.movieHeaderSynopsis {
+  width: 50%;
+}
+
+.movieCastContainer {
+  display: flex;
+  gap: 35px;
+  overflow-x: scroll;
+  margin-bottom: 45px;
+
+  &::-webkit-scrollbar {
+    height: 12px;
+    overflow: unset;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #504a3f;
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #635c4e;
+    border-radius: 25px;
   }
 }
