@@ -1,15 +1,19 @@
+import { useNavigate } from "react-router-dom"
 import "./movieSmallCard.scss"
 
-function MovieSmallCard() {
+
+function MovieSmallCard({ movie }) {
+  const navigate = useNavigate()
+
   return (
-    <div className="movieSmallCard">
+    <div className="movieSmallCard" onClick={() => navigate(`movie/${movie.id}`)}>
       <div className="movieSmallCardContainer">
         <div className="movieSmallCardImg">
-          <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/35/11/65/affiche.jpg" alt="" />
+          <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="" />
         </div>
         <div className="movieSmallCardInfos">
           <h2>
-            Le seigneur des anneaux
+            {movie.original_title}
           </h2>
           <p>Action, Aventure, Drama</p>
         </div>

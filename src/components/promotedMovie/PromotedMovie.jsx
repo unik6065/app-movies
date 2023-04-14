@@ -1,11 +1,11 @@
 import "./promotedMovie.scss"
 
-function PromotedMovie() {
+function PromotedMovie({ movie }) {
   return (
     <div className="promotedMovie">
       <div className="promotedMovieContainer">
         <div className="promotedMovieInfos">
-          <h2 className="promotedMovieTitle">The Soul Conductor</h2>
+          <h2 className="promotedMovieTitle">{movie.original_title}</h2>
           <div className="promotedMovieDetails">
             <div className="promotedMovieNote">
               <img
@@ -13,14 +13,14 @@ function PromotedMovie() {
                 alt="tmbd icone"
                 className="promotedMovieInfosLogo"
               />
-              <p>7.8</p>
+              <p>{movie.vote_average}</p>
             </div>
             <p> - </p>
-            <p>English</p>
+            <p>{movie.original_language}</p>
           </div>
         </div>
         <div className="promotedMovieImage">
-          <img src="https://imgsrc.cineserie.com/2018/04/54986.jpg" alt="" />
+          <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="" />
         </div>
       </div>
     </div>

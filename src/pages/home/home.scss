@@ -16,12 +16,6 @@
   max-width: 100%;
 }
 
-.homeMovieList {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 25px;
-  max-width: 1200px;
-}
 
 .sideBar {
   grid-column: 1/4;
