@@ -9,14 +9,14 @@ description: first deployment from code made by myself
 ssl: true
 
 nodes:
-  nodeType: nginx
-  nodeGroup: bl
-  count: 1
-  cloudlets: 8
-  displayName: loadBalancer
+  - nodeType: nginx
+    nodeGroup: bl
+    count: 1
+    cloudlets: 8
+    displayName: loadBalancer
 
-  nodeType: nodejs
-  count: 1
-  cloudlets: 8
-  nodeGroup: cp
-  displayName: FrontWeb
+  - nodeType: nodejs
+    count: 1
+    cloudlets: 8
+    nodeGroup: cp
+    displayName: FrontWeb
