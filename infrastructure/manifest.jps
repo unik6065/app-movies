@@ -20,3 +20,6 @@ nodes:
     cloudlets: 8
     nodeGroup: cp
     displayName: FrontWeb
+
+success:
+  Your environnement is ready to GO!
