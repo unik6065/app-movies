@@ -15,7 +15,7 @@ nodes:
   cloudlets: 8
   displayName: loadBalancer
 
-  nodeType: Node.js
+  nodeType: Nodejs
   count: 1
   cloudlets: 8
   nodeGroup: cp
