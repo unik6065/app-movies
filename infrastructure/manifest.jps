@@ -1,13 +1,22 @@
 type: install
-name: Hello World
-engine: php5.4
+name: movies
+id: movies
+logo: https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png
+homepage: https://github.com/unik6065/app-movies
+
+description: first deployment from code made by myself
+
+ssl: true
 
 nodes:
-  nodeType: apache2
-  cloudlets: 16
+  nodeType: nginx
+  nodeGroup: bl
+  count: 1
+  cloudlets: 8
+  displayName: loadBalancer
 
-onInstall:
-  deploy:
-    archive: http://app.demo.jelastic.com/HelloWorld.zip
-    name: Hello World
-    context: ROOT
+  nodeType: Node.js
+  count: 1
+  cloudlets: 8
+  nodeGroup: cp
+  displayName: FrontWeb
