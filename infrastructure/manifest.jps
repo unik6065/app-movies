@@ -21,5 +21,9 @@ nodes:
     nodeGroup: cp
     displayName: FrontWeb
 
+  - nodeType: ruby
+    count: 1
+    cloudlets: 8
+    displayName: BackEnd
 success:
   Your environnement is ready to GO!
